@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3E171FB252EE56B00846A86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E171FA252EE56B00846A86 /* AppDelegate.swift */; };
+		B3E171FD252EE56B00846A86 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E171FC252EE56B00846A86 /* Document.swift */; };
+		B3E17200252EE56B00846A86 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E171FE252EE56B00846A86 /* Document.xib */; };
+		B3E17202252EE56C00846A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E17201252EE56C00846A86 /* Assets.xcassets */; };
+		B3E17205252EE56C00846A86 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E17203252EE56C00846A86 /* MainMenu.xib */; };
+		B3E17215252EE5A400846A86 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E17214252EE5A400846A86 /* Quartz.framework */; };
+		B3E17218252EE5A400846A86 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E17217252EE5A400846A86 /* PreviewViewController.swift */; };
+		B3E1721B252EE5A400846A86 /* PreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E17219252EE5A400846A86 /* PreviewViewController.xib */; };
+		B3E17220252EE5A400846A86 /* enchantMOON.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B3E17212252EE5A400846A86 /* enchantMOON.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B3E1722D252EF5FD00846A86 /* MoonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1722B252EF5FD00846A86 /* MoonObject.swift */; };
+		B3E1722E252EF5FD00846A86 /* MoonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1722B252EF5FD00846A86 /* MoonObject.swift */; };
+		B3E1722F252EF5FD00846A86 /* NSColor+Int32.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1722C252EF5FD00846A86 /* NSColor+Int32.swift */; };
+		B3E17230252EF5FD00846A86 /* NSColor+Int32.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E1722C252EF5FD00846A86 /* NSColor+Int32.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3E1721E252EE5A400846A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E171EF252EE56B00846A86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3E17211252EE5A400846A86;
+			remoteInfo = enchantMOON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B3E17224252EE5A400846A86 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B3E17220252EE5A400846A86 /* enchantMOON.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B3E171F7252EE56B00846A86 /* eMQuickLook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eMQuickLook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E171FA252EE56B00846A86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3E171FC252EE56B00846A86 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		B3E171FF252EE56B00846A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		B3E17201252EE56C00846A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E17204252EE56C00846A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B3E17206252EE56C00846A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E17207252EE56C00846A86 /* eMQuickLook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = eMQuickLook.entitlements; sourceTree = "<group>"; };
+		B3E17212252EE5A400846A86 /* enchantMOON.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = enchantMOON.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E17214252EE5A400846A86 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		B3E17217252EE5A400846A86 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
+		B3E1721A252EE5A400846A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/PreviewViewController.xib; sourceTree = "<group>"; };
+		B3E1721C252EE5A400846A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E1721D252EE5A400846A86 /* enchantMOON.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = enchantMOON.entitlements; sourceTree = "<group>"; };
+		B3E1722B252EF5FD00846A86 /* MoonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoonObject.swift; sourceTree = "<group>"; };
+		B3E1722C252EF5FD00846A86 /* NSColor+Int32.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Int32.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3E171F4252EE56B00846A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E1720F252EE5A400846A86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E17215252EE5A400846A86 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3E171EE252EE56B00846A86 = {
+			isa = PBXGroup;
+			children = (
+				B3E171F9252EE56B00846A86 /* eMQuickLook */,
+				B3E17216252EE5A400846A86 /* enchantMOON */,
+				B3E17213252EE5A400846A86 /* Frameworks */,
+				B3E171F8252EE56B00846A86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3E171F8252EE56B00846A86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E171F7252EE56B00846A86 /* eMQuickLook.app */,
+				B3E17212252EE5A400846A86 /* enchantMOON.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E171F9252EE56B00846A86 /* eMQuickLook */ = {
+			isa = PBXGroup;
+			children = (
+				B3E171FA252EE56B00846A86 /* AppDelegate.swift */,
+				B3E171FC252EE56B00846A86 /* Document.swift */,
+				B3E171FE252EE56B00846A86 /* Document.xib */,
+				B3E17201252EE56C00846A86 /* Assets.xcassets */,
+				B3E17203252EE56C00846A86 /* MainMenu.xib */,
+				B3E17206252EE56C00846A86 /* Info.plist */,
+				B3E17207252EE56C00846A86 /* eMQuickLook.entitlements */,
+				B3E1722B252EF5FD00846A86 /* MoonObject.swift */,
+				B3E1722C252EF5FD00846A86 /* NSColor+Int32.swift */,
+			);
+			path = eMQuickLook;
+			sourceTree = "<group>";
+		};
+		B3E17213252EE5A400846A86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3E17214252EE5A400846A86 /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3E17216252EE5A400846A86 /* enchantMOON */ = {
+			isa = PBXGroup;
+			children = (
+				B3E17217252EE5A400846A86 /* PreviewViewController.swift */,
+				B3E17219252EE5A400846A86 /* PreviewViewController.xib */,
+				B3E1721C252EE5A400846A86 /* Info.plist */,
+				B3E1721D252EE5A400846A86 /* enchantMOON.entitlements */,
+			);
+			path = enchantMOON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3E171F6252EE56B00846A86 /* eMQuickLook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E1720A252EE56C00846A86 /* Build configuration list for PBXNativeTarget "eMQuickLook" */;
+			buildPhases = (
+				B3E171F3252EE56B00846A86 /* Sources */,
+				B3E171F4252EE56B00846A86 /* Frameworks */,
+				B3E171F5252EE56B00846A86 /* Resources */,
+				B3E17224252EE5A400846A86 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3E1721F252EE5A400846A86 /* PBXTargetDependency */,
+			);
+			name = eMQuickLook;
+			productName = eMQuickLook;
+			productReference = B3E171F7252EE56B00846A86 /* eMQuickLook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3E17211252EE5A400846A86 /* enchantMOON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E17221252EE5A400846A86 /* Build configuration list for PBXNativeTarget "enchantMOON" */;
+			buildPhases = (
+				B3E1720E252EE5A400846A86 /* Sources */,
+				B3E1720F252EE5A400846A86 /* Frameworks */,
+				B3E17210252EE5A400846A86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = enchantMOON;
+			productName = enchantMOON;
+			productReference = B3E17212252EE5A400846A86 /* enchantMOON.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3E171EF252EE56B00846A86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					B3E171F6252EE56B00846A86 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					B3E17211252EE5A400846A86 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = B3E171F2252EE56B00846A86 /* Build configuration list for PBXProject "eMQuickLook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3E171EE252EE56B00846A86;
+			productRefGroup = B3E171F8252EE56B00846A86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3E171F6252EE56B00846A86 /* eMQuickLook */,
+				B3E17211252EE5A400846A86 /* enchantMOON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3E171F5252EE56B00846A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E17202252EE56C00846A86 /* Assets.xcassets in Resources */,
+				B3E17200252EE56B00846A86 /* Document.xib in Resources */,
+				B3E17205252EE56C00846A86 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E17210252EE5A400846A86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E1721B252EE5A400846A86 /* PreviewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3E171F3252EE56B00846A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E171FD252EE56B00846A86 /* Document.swift in Sources */,
+				B3E1722F252EF5FD00846A86 /* NSColor+Int32.swift in Sources */,
+				B3E1722D252EF5FD00846A86 /* MoonObject.swift in Sources */,
+				B3E171FB252EE56B00846A86 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3E1720E252EE5A400846A86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E17230252EF5FD00846A86 /* NSColor+Int32.swift in Sources */,
+				B3E17218252EE5A400846A86 /* PreviewViewController.swift in Sources */,
+				B3E1722E252EF5FD00846A86 /* MoonObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3E1721F252EE5A400846A86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3E17211252EE5A400846A86 /* enchantMOON */;
+			targetProxy = B3E1721E252EE5A400846A86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3E171FE252EE56B00846A86 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E171FF252EE56B00846A86 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		B3E17203252EE56C00846A86 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E17204252EE56C00846A86 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		B3E17219252EE5A400846A86 /* PreviewViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E1721A252EE5A400846A86 /* Base */,
+			);
+			name = PreviewViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3E17208252EE56C00846A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3E17209252EE56C00846A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B3E1720B252EE56C00846A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = eMQuickLook/eMQuickLook.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LDFA6E6QA2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = eMQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paraches.macOS.eMQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B3E1720C252EE56C00846A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = eMQuickLook/eMQuickLook.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LDFA6E6QA2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = eMQuickLook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paraches.macOS.eMQuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B3E17222252EE5A400846A86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = enchantMOON/enchantMOON.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDFA6E6QA2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = enchantMOON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paraches.macOS.eMQuickLook.enchantMOON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B3E17223252EE5A400846A86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = enchantMOON/enchantMOON.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LDFA6E6QA2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = enchantMOON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paraches.macOS.eMQuickLook.enchantMOON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3E171F2252EE56B00846A86 /* Build configuration list for PBXProject "eMQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E17208252EE56C00846A86 /* Debug */,
+				B3E17209252EE56C00846A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E1720A252EE56C00846A86 /* Build configuration list for PBXNativeTarget "eMQuickLook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E1720B252EE56C00846A86 /* Debug */,
+				B3E1720C252EE56C00846A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E17221252EE5A400846A86 /* Build configuration list for PBXNativeTarget "enchantMOON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E17222252EE5A400846A86 /* Debug */,
+				B3E17223252EE5A400846A86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3E171EF252EE56B00846A86 /* Project object */;
+}
